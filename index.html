@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIMPLE INTEREST CALCULATOR</title>
+</head>
+
+<body>
+    <center>
+        <h1 style="color: aqua;">SIMPLE INTEREST CALCULATOR</h1>
+
+        <form method="post">
+
+            <input type="number"
+                   step="any"
+                   name="p"
+                   placeholder="Principal Amount"
+                   required>
+
+            <input type="number"
+                   step="any"
+                   name="r"
+                   placeholder="Rate"
+                   required>
+
+            <input type="number"
+                   step="any"
+                   name="t"
+                   placeholder="Time"
+                   required>
+
+            <br><br>
+
+            <button type="submit">CALCULATE</button>
+
+        </form>
+
+        {% if result %}
+            <h3>Simple Interest = {{ result }}</h3>
+            <h3>Total Amount = {{ total }}</h3>
+        {% endif %}
+
+    </center>
+</body>
+</html>
